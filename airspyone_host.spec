@@ -18,7 +18,7 @@ Source0:        https://github.com/airspy/%{name}/archive/%{git_commit}/%{name}-
 
 BuildRequires:	pkgconfig(libusb)
 BuildRequires:	cmake
-Requires:       systemd-udev
+Requires:       systemd
 
 %description
 Software for AirSpy, a project to produce a low cost, open
