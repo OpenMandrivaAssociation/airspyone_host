@@ -1,20 +1,14 @@
 # Force out of source build
 %undefine __cmake_in_source_build
 
-%global git_commit 70520c999eb6612a53def319fc1b044ed1c041d8
-%global git_date 20210215
-
-%global git_short_commit %(echo %{git_commit} | cut -c -8)
-%global git_suffix %{git_date}git%{git_short_commit}
-
 Name:           airspyone_host
-Version:        1.0.9
-Release:        11.%{git_suffix}%{?dist}
+Version:	1.0.10
+Release:	1
 Summary:        AirSpy host tools and library
 
 License:        GPLv2+
 URL:            http://airspy.com/
-Source0:        https://github.com/airspy/%{name}/archive/%{git_commit}/%{name}-%{git_suffix}.tar.gz
+Source0:	https://github.com/airspy/airspyone_host/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:	pkgconfig(libusb)
 BuildRequires:	cmake
@@ -33,7 +27,7 @@ Summary:        Development files for %{name}
 Files needed to develop software against libairspy.
 
 %prep
-%setup -q -n %{name}-%{git_commit}
+%autosetup -p1
 
 # Remove win stuff
 rm -rf libairspy/vc
