@@ -7,7 +7,7 @@
 
 Name:           airspyone_host
 Version:	1.0.10
-Release:	1
+Release:	2
 Summary:        AirSpy host tools and library
 Group:      Communications
 License:        GPLv2+
