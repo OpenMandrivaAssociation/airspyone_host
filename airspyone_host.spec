@@ -11,7 +11,7 @@ Release:	3
 Summary:        AirSpy host tools and library
 Group:      Communications
 License:        GPLv2+
-URL:            http://airspy.com/
+URL:            https://airspy.com/
 Source0:	https://github.com/airspy/airspyone_host/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:	pkgconfig(libusb)
